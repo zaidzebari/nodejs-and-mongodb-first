@@ -26,5 +26,5 @@ MongoClient.connect(url,async function(err, client) {
     console.log(result);
     //close connection
     client.close();
-});
+}); 
 
