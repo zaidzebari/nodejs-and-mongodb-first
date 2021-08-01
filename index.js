@@ -22,6 +22,7 @@ MongoClient.connect(url,async function(err, client) {
     var std2 = {name:'Raid', standard: 11, subject:['Biology', 'Chemistry']};
     var std3 = {name:'Ayaz', standard: 12, subject:['Statics', 'Commerce', 'Maths']};
 
+    //wait before connection closed
     //insert documents to students collection
     var result = await collection.insertMany([std1, std2, std3]);
     console.log(result);
