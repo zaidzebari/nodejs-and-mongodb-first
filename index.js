@@ -3,6 +3,7 @@ var MongoClient = require('mongodb').MongoClient, assert = require('assert');
 //connection url here
 var url = 'mongodb://localhost:27017';
 
+//updated all of this
 MongoClient.connect(url,async function(err, client) {
 
     //assert if error happen, or null
