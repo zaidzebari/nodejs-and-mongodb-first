@@ -1,0 +1,14 @@
+{
+  "name": "firstnodeproject",
+  "version": "1.0.0",
+  "description": "my first mongodb and nodejs project with old version",
+  "main": "index.js",
+  "scripts": {
+    "test": "testIt"
+  },
+  "author": "Zaid Salah",
+  "license": "ISC",
+  "dependencies": {
+    "mongodb": "^4.0.1"
+  }
+}
