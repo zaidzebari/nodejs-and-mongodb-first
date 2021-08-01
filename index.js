@@ -4,6 +4,7 @@ var MongoClient = require('mongodb').MongoClient, assert = require('assert');
 var url = 'mongodb://localhost:27017';
 
 MongoClient.connect(url,async function(err, client) {
+
     //assert if error happen, or null
     assert.equal(null, err);
     //we have connection
@@ -26,3 +27,4 @@ MongoClient.connect(url,async function(err, client) {
     //close connection
     client.close();
 });
+
