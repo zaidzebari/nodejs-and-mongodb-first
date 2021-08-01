@@ -18,8 +18,8 @@ MongoClient.connect(url,async function(err, client) {
     var collection =  db.collection('students');
 
     //update subject and if we don't had subject create it
-    var result = await collection.updateOne({name:'Zaid'}, {$set: {subject: ['Science', 'Programming']}})
-    console.log(result);
+    // var result = await collection.updateOne({name:'Zaid'}, {$set: {subject: ['Science', 'Programming']}})
+    // console.log(result);
     //creatiing student documents to be inserted
     // var std1 = {name:'Zaid', standard: 10, subject:['Physics', 'Chemistry', 'Maths']};
     // var std2 = {name:'Raid', standard: 11, subject:['Biology', 'Chemistry']};
@@ -27,12 +27,21 @@ MongoClient.connect(url,async function(err, client) {
 
     //wait before connection closed
     //insert documents to students collection
-    // var result = await collection.insertMany([std1, std2, std3]);
+    // var result = await collection.insertMany([std3]);
     // console.log(result);
+   
+    //query to a collection
+//    var result = await collection.find({name:'Zaid'});
+//    var result = await collection.findOne({name:'Zaid'});
+//    console.log(result);
+   
+//this is for delete
+// var result = await collection.deleteOne({name:'Ayaz'});
+// console.log(result);
+   
+   
+   
     //close connection
-
-
-
     client.close();
 }); 
 
